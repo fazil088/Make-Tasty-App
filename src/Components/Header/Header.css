@@ -1,0 +1,79 @@
+.navbar{
+    position: fixed;
+    padding: 10px;
+    z-index: 99;
+    width: 100vw;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.child_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_section{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchInput{
+    border: 1px solid;
+    border-radius: 20px;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    height: 40px;
+}
+
+.searchInput input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 250px;
+    padding-left: 10px;
+}
+
+.searchInput i{
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.logo{
+    border: 2px solid;
+    padding: 2px;
+    background-color: #808080;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu_section{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.signUpOrLogin{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.linkLogin{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #808080;
+}
+.linkLogin:hover{
+    color: #111;
+}
+.signUpOrLogin i{
+    font-size: 25px;
+}
+.bi-list{
+    cursor: pointer;
+    font-size: 35px;
+}

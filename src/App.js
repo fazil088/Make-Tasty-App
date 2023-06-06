@@ -1,11 +1,18 @@
 import './App.css';
-import SignUp from './Components/SignUp/SignUp';
+import Home from './Pages/Home';
+import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import SignUpAndLogin from './Pages/SignUpAndLogin';
 
 function App() {
   return (
-    <div className="App">
-      <SignUp/>
-    </div>
+    <div>
+        <Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route path='/login' element={<SignUpAndLogin/>} />
+      </Routes>
+    </Router>
+      </div>
   );
 }
 

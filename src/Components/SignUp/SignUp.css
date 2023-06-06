@@ -3,6 +3,16 @@
   --signUp-bg : #79AEB2;
 }
 
+.loader{
+  height: 100vh;
+  width: 100vw;
+}
+.loaderItem{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .signupPage{
     height: 100vh;
     display: flex;
