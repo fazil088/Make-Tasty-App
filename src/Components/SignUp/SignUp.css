@@ -91,9 +91,16 @@
   transform-origin: right;
   color: #fff;
 }
+.signupClick::before{
+  transform-origin: left;
+}
 
-.loginClick:hover::before,
 .signupClick:hover::before{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.loginClick:hover::before{
   transform: scaleX(1);
   transform-origin: left;
 }

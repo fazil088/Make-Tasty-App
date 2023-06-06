@@ -10,12 +10,16 @@ function SignUp() {
         {signupIs && <div className={`signupInfo ${signupIs && 'visible2'}`}>
           <form id='form' action="">
             <div className='inputFields'>
-              <label htmlFor="">Name</label>
+              <label htmlFor="">User Name</label>
               <input type="text" required />
             </div>
             <div className='inputFields'>
               <label htmlFor="">E-mail</label>
               <input type="email" required  />
+            </div>
+            <div className='inputFields'>
+              <label htmlFor="">Mobile Number</label>
+              <input type="tel" required  />
             </div>
            <div className='inputFields'>
               <label htmlFor="">Password</label>
@@ -33,8 +37,8 @@ function SignUp() {
         {loginIs && <div className={`loginInfo ${loginIs&&'visible1'}`}>
           <form className="loginItems">
             <div className='inputFields'>
-              <label htmlFor="">User Name</label>
-              <input type="text" required />
+              <label htmlFor="">E-mail</label>
+              <input type="email" required />
             </div>  
             <div className='inputFields'>
               <label htmlFor="">Password</label>
