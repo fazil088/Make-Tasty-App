@@ -1,9 +1,8 @@
 import React,{useState,useEffect,useContext} from 'react';
 import { useNavigate} from 'react-router-dom'
 import {PacmanLoader} from 'react-spinners'
-import './SignUp.css';
-import Header from '../Header/Header';
 import { FirebaseContext } from '../../store/FirebaseContext';
+import './SignUp.css';
 
 function SignUp() {
   const [loginIs,setLoginIs] = useState(false)
@@ -25,7 +24,7 @@ function SignUp() {
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setIsLoading(false)
-    },3000)
+    },2000)
 
     return ()=>clearTimeout(timer)
   },[])
@@ -33,7 +32,6 @@ function SignUp() {
   if(isLoading || isSubmitted){
     return (
       <div className='loader'>
-        <Header/>
         <PacmanLoader className='loaderItem'  color='#79AEB2'/>
       </div>
     )
@@ -64,16 +62,19 @@ function SignUp() {
 
   function handleLogin(e){
     e.preventDefault()
+    setIsSubmitted(true)
     firebase.auth().signInWithEmailAndPassword(loginEmail,loginPassword).then(()=>{
       history('/')
     }).catch((err)=>{
       alert(err.message)
+    }).finally(()=>{
+      setIsSubmitted(false)
     })
   }
   
   return (
     <React.Fragment>
-      <Header/>
+      {/* <Header/> */}
       <div className='signupPage'>
         <div className={`login ${loginIs && 'signup_bg'}`}>
     

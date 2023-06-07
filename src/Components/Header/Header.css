@@ -61,15 +61,16 @@
 }
 
 .signUpOrLogin{
-    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 10px;
 }
 .linkLogin{
     margin-left: 10px;
     text-decoration: none;
     color: #808080;
+    cursor: pointer;
 }
 .linkLogin:hover{
     color: #111;
@@ -77,7 +78,15 @@
 .signUpOrLogin i{
     font-size: 25px;
 }
-.bi-list{
+.signUpOrLogin h5{
+    cursor: pointer;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.bi-list,
+.bi-x{
     cursor: pointer;
     font-size: 35px;
+    z-index: 99;
 }

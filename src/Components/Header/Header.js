@@ -1,10 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
 import { AuthContext } from '../../store/FirebaseContext'
+import Navbar from '../Navbar/Navbar'
 
 function Header() {
-
+  const [isClicked,setIsClicked] = useState(false)
   const {user} = useContext(AuthContext)
   return (
     <div className='navbar'>
@@ -18,11 +19,14 @@ function Header() {
         </div>
         <div className="menu_section">
             <div className="signUpOrLogin">
-                <i className='bi bi-person-circle'></i>
                 <h5>{user && user.displayName}</h5>
+                <i className='bi bi-person-circle'></i>
                 {user ? '' : <Link className='linkLogin' to='/login'>Login/SignUp</Link>}
             </div>
-            <i className='bi bi-list'></i>
+              <i className={isClicked ? 'bi bi-x' : 'bi bi-list' } onClick={()=>{
+                setIsClicked(!isClicked)
+              }}></i>
+              {isClicked && <Navbar/>}
         </div>
       </div>
       
