@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
+import { AuthContext } from '../../store/FirebaseContext'
 
 function Header() {
 
+  const {user} = useContext(AuthContext)
   return (
     <div className='navbar'>
       <div className="child_header">
@@ -17,7 +19,8 @@ function Header() {
         <div className="menu_section">
             <div className="signUpOrLogin">
                 <i className='bi bi-person-circle'></i>
-                <Link className='linkLogin' to='/login'>Login/SignUp</Link>
+                <h5>{user && user.displayName}</h5>
+                {user ? '' : <Link className='linkLogin' to='/login'>Login/SignUp</Link>}
             </div>
             <i className='bi bi-list'></i>
         </div>

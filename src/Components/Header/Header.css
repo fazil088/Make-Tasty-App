@@ -1,9 +1,12 @@
 .navbar{
+    top: 0;
     position: fixed;
     padding: 10px;
-    z-index: 99;
+    z-index: 999;
     width: 100vw;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 70px;
 }
 
 .child_header{
@@ -61,6 +64,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 .linkLogin{
     margin-left: 10px;
