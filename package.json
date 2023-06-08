@@ -1,5 +1,5 @@
 {
-  "homepage": "https://fazil088.github.io/Make-Tasty-website/",
+  "homepage": "https://fazil088.github.io/Make-Tasty-App",
   "name": "app",
   "version": "0.1.0",
   "private": true,
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
