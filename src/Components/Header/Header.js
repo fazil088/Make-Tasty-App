@@ -19,7 +19,7 @@ function Header() {
         </div>
         <div className="menu_section">
             <div className="signUpOrLogin">
-                <h5>{user && user.displayName}</h5>
+                <h5>{user && user.displayName.charAt(0).toUpperCase() + user.displayName.slice(1)}</h5>
                 <i className='bi bi-person-circle'></i>
                 {user ? '' : <Link className='linkLogin' to='/login'>Login/SignUp</Link>}
             </div>
