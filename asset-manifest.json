@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Make-Tasty-App/static/css/main.0aee9e51.css",
-    "main.js": "/Make-Tasty-App/static/js/main.e42fc721.js",
-    "static/media/pexels-robin-stickel-70497.jpg": "/Make-Tasty-App/static/media/pexels-robin-stickel-70497.114a4e63298287636c70.jpg",
+    "main.css": "/Make-Tasty-App/static/css/main.ada0129a.css",
+    "main.js": "/Make-Tasty-App/static/js/main.68f02eb2.js",
+    "static/media/banner_background.jpg": "/Make-Tasty-App/static/media/banner_background.e3c93256f63acdf82f63.jpg",
+    "static/media/logo.jpg": "/Make-Tasty-App/static/media/logo.9ddbdfbbff0c7150569c.jpg",
     "index.html": "/Make-Tasty-App/index.html",
-    "main.0aee9e51.css.map": "/Make-Tasty-App/static/css/main.0aee9e51.css.map",
-    "main.e42fc721.js.map": "/Make-Tasty-App/static/js/main.e42fc721.js.map"
+    "main.ada0129a.css.map": "/Make-Tasty-App/static/css/main.ada0129a.css.map",
+    "main.68f02eb2.js.map": "/Make-Tasty-App/static/js/main.68f02eb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aee9e51.css",
-    "static/js/main.e42fc721.js"
+    "static/css/main.ada0129a.css",
+    "static/js/main.68f02eb2.js"
   ]
 }
