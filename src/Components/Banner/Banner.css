@@ -1,7 +1,12 @@
 .parentDivofBanner{
-    background-image: url(../../../public/Images/pexels-robin-stickel-70497.jpg);
+    background-image: url(../../../public/Images/banner_background.jpg);
     background-size: cover;
     height: 500px;
     position: relative;
     margin-top: 70px;
+}
+
+.fadeShow{
+    height: 500px;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),rgba(155, 149, 149, 0.7));
 }

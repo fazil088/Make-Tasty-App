@@ -3,15 +3,18 @@
   --signUp-bg : #79AEB2;
 }
 
-/* .loader{
-  height: 100vh;
-  width: 100vw;
-}
-.loaderItem{
-  top: 50%;
+.CompanyLogo{
+  /* border: 2px solid; */
+  position: fixed;
+  width: 200px;
+  height: 180px;
+  background-image: url(../../../public/Images/logo.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 2%;
   left: 50%;
-  transform: translate(-50%,-50%);
-} */
+  transform: translate(-50%);
+}
 
 .signupPage{
     height: 100vh;
@@ -19,6 +22,7 @@
     justify-content: center;
     align-items: center;
     gap: 3px;
+    padding-top: 5rem;
 }
 
 .login,.signup{

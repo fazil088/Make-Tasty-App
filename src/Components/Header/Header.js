@@ -2,20 +2,17 @@ import React, { useContext, useState } from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
 import { AuthContext } from '../../store/FirebaseContext'
-import Navbar from '../Navbar/Navbar'
+import Navbar from '../Navbar/Navbar';
+
 
 function Header() {
   const [isClicked,setIsClicked] = useState(false)
   const {user} = useContext(AuthContext)
   return (
-    <div className='navbar'>
+    <div className='header'>
       <div className="child_header">
         <div className="logo_section">
-            <h3 className='logo'>Make Tasty</h3>
-            <div className='searchInput'>
-            <input type="text"/>
-            <i className='bi bi-search'></i>
-            </div>
+            <div className='logo'/>
         </div>
         <div className="menu_section">
             <div className="signUpOrLogin">

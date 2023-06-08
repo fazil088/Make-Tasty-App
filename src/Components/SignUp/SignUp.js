@@ -64,7 +64,7 @@ function SignUp() {
     e.preventDefault()
     setIsSubmitted(true)
     firebase.auth().signInWithEmailAndPassword(loginEmail,loginPassword).then(()=>{
-      history('/')
+      history('/Make-Tasty-App')
     }).catch((err)=>{
       alert(err.message)
     }).finally(()=>{
@@ -74,7 +74,7 @@ function SignUp() {
   
   return (
     <React.Fragment>
-      {/* <Header/> */}
+      <div className='CompanyLogo'></div>
       <div className='signupPage'>
         <div className={`login ${loginIs && 'signup_bg'}`}>
     
