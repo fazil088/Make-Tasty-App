@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Make-Tasty-App/static/css/main.0aee9e51.css",
+    "main.js": "/Make-Tasty-App/static/js/main.81adabd8.js",
+    "static/media/pexels-robin-stickel-70497.jpg": "/Make-Tasty-App/static/media/pexels-robin-stickel-70497.114a4e63298287636c70.jpg",
+    "index.html": "/Make-Tasty-App/index.html",
+    "main.0aee9e51.css.map": "/Make-Tasty-App/static/css/main.0aee9e51.css.map",
+    "main.81adabd8.js.map": "/Make-Tasty-App/static/js/main.81adabd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aee9e51.css",
+    "static/js/main.81adabd8.js"
+  ]
+}
