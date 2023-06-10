@@ -3,6 +3,7 @@ import './Navbar.css'
 import {AuthContext, FirebaseContext} from '../../store/ContextStore'
 import { Link, useNavigate } from 'react-router-dom'
 import { BeatLoader } from 'react-spinners'
+import logoImage from '../../ConstImages/logo.jpg'
 
 
 function Navbar({isVisible}) {
@@ -43,7 +44,7 @@ function Navbar({isVisible}) {
   return (
     <div className={`navbarBody ${isVisible? 'visible' : 'hidden'}`}>
       {
-        user && <div className='profileImage'>
+        user ? <div className='profileImage'>
         {user && <img src={profileImage} alt="" />}
         <div className='selectProfile'>
         <input className='fileUpload' type="file" onChange={(e)=>setSelectedImage(e.target.files[0])} />
@@ -53,7 +54,7 @@ function Navbar({isVisible}) {
           <BeatLoader className='profileLoader' size={8} color='#006ba6' />
           </div> : selectedImage && <button className='uploadButton' onClick={handleImageUpload} >Upload</button>
         }
-      </div>
+      </div> : <div className='navLogo'><img src={logoImage} alt="" /></div>
       }
       <ul>
         <li onClick={()=>navigate('/Make-Tasty-App')}>Home</li>

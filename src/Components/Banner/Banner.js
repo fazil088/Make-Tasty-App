@@ -5,7 +5,6 @@ function Banner() {
   return (
     <div className='parentDivofBanner'>
       
-      <div className='fadeShow'></div>
     </div>
   )
 }

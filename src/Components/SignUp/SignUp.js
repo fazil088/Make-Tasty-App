@@ -50,14 +50,22 @@ function SignUp() {
             password:password,
             email:email,
           })
+          .finally(()=>{
+            setIsSubmitted(false)
+            setSignUpIs(false)
+            setLoginIs(true)
+          })
+        }).catch((err)=>{
+          alert(err.message)
         })
-      }).catch((err)=>{
-        alert(err.message)
-      }).finally(()=>{
-        setIsSubmitted(false)
-        setSignUpIs(false)
-        setLoginIs(true)
       })
+      .catch((err)=>{
+        alert(err.message)
+        setIsSubmitted(false)
+        setSignUpIs(true)
+        setLoginIs(false)
+      })
+      
   }
 
   function handleLogin(e){
