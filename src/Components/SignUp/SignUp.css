@@ -4,8 +4,7 @@
 }
 
 .CompanyLogo{
-  /* border: 2px solid; */
-  position: fixed;
+  position: absolute;
   width: 200px;
   height: 180px;
   background-image: url(../../../public/Images/logo.jpg);
@@ -14,6 +13,16 @@
   top: 2%;
   left: 50%;
   transform: translate(-50%);
+}
+
+.bi-arrow-right{
+  border: 1px solid var(--signUp-bg);
+  position: absolute;
+  right: 6%;
+  top:84% ;
+  padding: 0.1rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 .signupPage{

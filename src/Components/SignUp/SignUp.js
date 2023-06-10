@@ -1,7 +1,7 @@
 import React,{useState,useEffect,useContext} from 'react';
-import { useNavigate} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import {PacmanLoader} from 'react-spinners'
-import { FirebaseContext } from '../../store/FirebaseContext';
+import { FirebaseContext } from '../../store/ContextStore';
 import './SignUp.css';
 
 function SignUp() {
@@ -46,9 +46,9 @@ function SignUp() {
           firebase.firestore().collection('users').add({
             id:result.user.uid,
             name:username,
-            phone:mobilNumber,
+            phoneNumber:mobilNumber,
             password:password,
-            email:email
+            email:email,
           })
         })
       }).catch((err)=>{
@@ -126,6 +126,7 @@ function SignUp() {
         }} >SignUp</button>
         <p>Don't have an account?</p>
       </div>
+    <div><Link className='bi bi-arrow-right' to={ '/Make-Tasty-App'} ></Link></div>
     </div>
     </React.Fragment>
 

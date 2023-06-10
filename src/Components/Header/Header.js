@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
-import { AuthContext } from '../../store/FirebaseContext'
+import { AuthContext } from '../../store/ContextStore'
 import Navbar from '../Navbar/Navbar';
 
 
